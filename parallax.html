@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>parallax jQuery</title>
+    <style type="text/css">
+      .background{
+       background:url("http://free-texture.net/wp-content/uploads/pinewood-580x362.jpg")
+       repeat;
+       position:fixed;
+       width:100%;
+       height:300%;
+       top:0;
+       left:0;
+       z-index:-1;
+      }
+    </style>
+  </head>
+<body>
+<div class="background"></div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+<div class="slogan">
+  <h2 class="sloganTitle">
+    Parallax scrolling
+  </h2>
+</div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+<div class="wrapper">
+  <h1 class="pageTitle">title level1</h1>
+  <h2 class="pageSubTitle">title level2</h2>
+  <p>パラグラフ</p><p>パラグラフ</p><p>パラグラフ</p>
+</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  $(window).scroll(function(e){
+    parallax();
+  });
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.background').css('top',-(scrolled*0.2)+'px');
+  }
+
+  </script>
+</body>
+</html>
